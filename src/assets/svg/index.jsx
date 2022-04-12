@@ -1,0 +1,17 @@
+export { AddIcon } from './AddIcon';
+export { BookmarkIcon } from './BookmarkIcon';
+export { BurguerIcon } from './BurguerIcon';
+export { GridIcon } from './GridIcon';
+export { HeartIcon } from './HeartIcon';
+export { HomeIcon } from './HomeIcon';
+export { LogoIcon } from './LogoIcon';
+export { MentionsIcon } from './MentionsIcon';
+export { MessengerIcon } from './MessengerIcon';
+export { MoreIcon } from './MoreIcon';
+export { NotificationsIcon } from './NotificationsIcon';
+export { ReelsIcon } from './ReelsIcon';
+export { SearchIcon } from './SearchIcon';
+export { SeriesIcon } from './SeriesIcon';
+export { ShareIcon } from './ShareIcon';
+export { ShopIcon } from './ShopIcon';
+export { StoryEllipseIcon } from './StoryEllipseIcon';
