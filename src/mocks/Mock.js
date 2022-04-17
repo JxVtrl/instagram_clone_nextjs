@@ -1,6 +1,13 @@
 export const Mock = {
     "users": [
         {
+            "id": 0,
+            "name": "João Vitral",
+            "username": "JxVtrl",
+            "email": "",
+            "picture": "https://picsum.photos/200/300"
+        },
+        {
             "id": 1,
             "name": "Leanne Graham",
             "username": "Bret",

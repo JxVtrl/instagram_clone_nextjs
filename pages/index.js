@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-// import Header from '../components/Header';
 import { AppLayout } from '../src/layout/AppLayout';
 import Feed from '../src/components/Feed';
 import Stories from '../src/components/Stories';
