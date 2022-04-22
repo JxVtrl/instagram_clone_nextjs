@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { AppLayout } from '../src/layout/AppLayout';
-import Feed from '../src/components/Feed';
-import Stories from '../src/components/Stories';
+import { Feed, Stories } from '../src/components';
 
 const Scroll = styled.div`
   overflow-x: hidden;
