@@ -1,9 +1,13 @@
-const Feed = () => {
+import react from "react";
+import { Mock } from "../../mocks/Mock";
+import { Post } from "../Post";
+
+export const Feed = () => {
     return (
-        <div>
-            <h1>Feed</h1>
-        </div>
+        <>
+            {Mock.posts.map((post, index) => (
+                <Post key={index} post={post} />
+            ))}
+        </>
     );
 }
-    
-export default Feed;

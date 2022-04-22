@@ -7,7 +7,7 @@ import {
 
 import { HeaderContainer } from "./styles";
 
-const Header = () => {
+export const Header = () => {
     return (
         <HeaderContainer>
             <LogoIcon />
@@ -20,4 +20,3 @@ const Header = () => {
     );
 }
     
-export default Header;

@@ -40,7 +40,15 @@ export const PictureContainer = styled.div`
 
     svg {
         position: absolute;
+        z-index: 1;
         width: 68px;
         height: 68px;
+    }
+
+    img {
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
     }
 `
