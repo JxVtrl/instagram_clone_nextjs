@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import Header from '../components/Header';
-import { Nav as Footer } from '../components/Nav';
+import { Header, Nav as Footer } from '../components';
 
 const Container = styled.div`
     width: 100vw;
