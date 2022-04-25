@@ -16,6 +16,7 @@ export {
     ShareIcon,
     ShopIcon,
     StoryEllipseIcon,
+    CommentsIcon,
 } from './svg';
 
 export { Avatar } from './avatar';

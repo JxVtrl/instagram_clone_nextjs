@@ -15,3 +15,4 @@ export { SeriesIcon } from './SeriesIcon';
 export { ShareIcon } from './ShareIcon';
 export { ShopIcon } from './ShopIcon';
 export { StoryEllipseIcon } from './StoryEllipseIcon';
+export { CommentsIcon } from './CommentsIcon';

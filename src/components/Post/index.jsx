@@ -32,6 +32,7 @@ export const Post = data => {
                 userid={postId}
                 likes={postLikes}
                 description={postDescription}
+                userName={userName}
             />
         </PostContainer>
     );
