@@ -15,6 +15,7 @@ export const Post = data => {
     const sponsored         = data.post.sponsored
     const profileImg        = Mock.users[postId].picture
     const userName          = Mock.users[postId].username
+    const postTimestamp     = data.post.timestamp
     
     return (
         <PostContainer>
@@ -33,6 +34,8 @@ export const Post = data => {
                 likes={postLikes}
                 description={postDescription}
                 userName={userName}
+                profileImg={profileImg} // this will be changed to logged user profile image
+                timestamp={postTimestamp}
             />
         </PostContainer>
     );
