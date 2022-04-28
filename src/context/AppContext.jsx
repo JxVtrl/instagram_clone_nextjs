@@ -1,24 +1,44 @@
 import React, { createContext, useContext, useEffect, useState, useRef } from 'react'
 import { getImageFromAPI } from '../services/unsplash/unsplash.js'
-import { Mock } from '../mocks/Mock.js'
-
 
 const AppContext = createContext()
 
 export function AppProvider({ children }) {
+    const [users, setUsers] = useState([])
     const [storiesActive, setStoriesActive] = useState(false)
 
     useEffect(() => {
-        FindPhoto();
-    },[])
+        // FindPhoto();
+        getUsers();
+    }, [])
+
+    const getUsers = async () => {
+        const response = await fetch('https://jsonplaceholder.typicode.com/users')
+        const data = await response.json()
 
 
-    function FindPhoto() {
+        const response1 = await fetch('https://jsonplaceholder.typicode.com/photos')
+        const data1 = await response1.json()
+
+        data1.map((photo, index) => {
+            if (index < users.length) 
+                data[index].profilePhoto = photo.url
+        })
+
+
+        setUsers(data)
+    }
+
+
+
+    
+
+    const FindPhoto = () => {
         getImageFromAPI('profile')
             .then(response => response.json())
             .then(data => {
                 for (let i = 0; i < data.results.length; i++)
-                    Mock.users[i].picture = data.results[i].links.download
+                    users[i].picture = data.results[i].links.download
                 
                 setStoriesActive(true)
             });
@@ -26,8 +46,9 @@ export function AppProvider({ children }) {
 
 
     const value = {
-        FindPhoto,
+        // FindPhoto,
         storiesActive,
+        users
     }
 
     return (

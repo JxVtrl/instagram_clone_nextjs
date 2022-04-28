@@ -37,7 +37,6 @@ export const PostFooter = data => {
     console.log(diffDays)
 
 
-
     return (
         <PostFooterContainer>
 
